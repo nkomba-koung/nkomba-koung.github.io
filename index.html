@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #ffffff);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #007acc, #005b99);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .project {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+        .project img:hover {
+            opacity: 0.9;
+        }
+        .project-content {
+            padding: 30px;
+        }
+        .project-content h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: #007acc;
+        }
+        .project-content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+            color: #666;
+            background-color: #f1f1f1;
+        }
+        @media (min-width: 768px) {
+            .project {
+                flex-direction: row;
+            }
+            .project img {
+                width: 45%;
+                height: 100%;
+            }
+            .project-content {
+                width: 55%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mon Portfolio</h1>
+    <p>Quelques projets réalisés</p>
+</header>
+
+<main>
+
+    <div class="project">
+        <img src="images/img_3_Store.jpg" alt="Boutique de PC">
+        <div class="project-content">
+            <h2>Site web pour une boutique de vente de PC</h2>
+            <p>Nous avons conçu et déployé une plateforme en ligne complète, transformant l'expérience d'achat de PC avec une navigation intuitive, un catalogue riche et un processus de commande sécurisé. L'intégration du suivi des commandes et du service client a amélioré l'engagement client et les ventes.</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/img_1_AI.jpg" alt="Assistant IA Core Banking">
+        <div class="project-content">
+            <h2>Assistant d'intelligence Artificielle pour une application de Core Banking</h2>
+            <p>Nous avons développé un assistant IA pour une application bancaire, offrant une assistance personnalisée, automatisant des tâches et fournissant des analyses précieuses, améliorant ainsi l'efficacité et l'expérience client dans le domaine bancaire.</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/img_2_ki.jpg" alt="Chaîne YouTube Tech">
+        <div class="project-content">
+            <h2>Chaîne YouTube dédiée aux actus Tech</h2>
+            <p>Nous avons créé une chaîne YouTube dynamique sur l'actualité tech, avec des contenus réguliers, une stratégie SEO optimisée, et un fort engagement communautaire, positionnant la chaîne comme une référence dans son domaine.</p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2025 Mon Portfolio</p>
+</footer>
+
+</body>
+</html>
